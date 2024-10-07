@@ -16,8 +16,9 @@ labels:
   ':sparkles: FEAT':
     include: ['\bFeat\b', '\bFEAT\b', '\bfeat\b']
 
-  ":memo: DOCS":
-    include: ['\bDocs\b', '\bdocs\b', '\bREADME\b']
+  ':page_with_curl: DOCS':
+    include:
+      ['\bDocs\b', '\bDOCS\b']
 
   ':tada: INIT':
     include:
