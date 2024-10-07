@@ -12,7 +12,7 @@ comments:
 labels:
   ':bug: BUG':
     include:
-      ['\bfix\b', '\bFix\b']
+      ['fix', '\bFix\b']
 
   ':sparkles: FEAT':
     include:
