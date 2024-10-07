@@ -36,8 +36,3 @@ labels:
   ':page_with_curl: DOCS':
     include:
       ['\bDocs\b', '\bDOCS\b']
-
-
-
-🧹 CHORE
-🔨 REFACTOR
