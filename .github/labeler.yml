@@ -4,6 +4,8 @@ enable:
 
 # 레이블을 성공적으로 붙이고 PR에 보낼 코멘트를 설정
 comments:
+  issues: |
+    this is issue.
   prs: |
     Labeler has applied any labels matching special text in your title and description.
     Please review the labels and make any necessary changes.
@@ -11,12 +13,10 @@ comments:
 # 레이블
 labels:
   ':bug: BUG':
-    include:
-      ['fix', '\bFix\b']
+    include: ['fix', '\bFix\b', '\bfix\b']
 
   ':sparkles: FEAT':
-    include:
-      ['\bFeat\b', '\bFEAT\b']
+    include: ['\bFeat\b', '\bFEAT\b', '\bfeat\b']
 
   ':page_with_curl: DOCS':
     include:
