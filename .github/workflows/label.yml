@@ -1,0 +1,22 @@
+name: Labeler
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+    
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+
+    steps:
+    - id: label
+      uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
