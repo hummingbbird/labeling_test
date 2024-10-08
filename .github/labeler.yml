@@ -2,35 +2,30 @@ enable:
   issues: true
   prs: true
 
-comments:
-  issues: |
-    this is issue.
-  prs: |
-    Labeler has applied any labels matching special text in your title and description.
-    Please review the labels and make any necessary changes.
-
 labels:
   ':bug: BUG':
-    include: ['fix', '\bFix\b', '\bfix\b']
+    include: ['\bFix\b', '\bfix\b', '\bFIX\b']
 
   ':sparkles: FEAT':
     include: ['\bFeat\b', '\bFEAT\b', '\bfeat\b']
 
   ':page_with_curl: DOCS':
     include:
-      ['\bDocs\b', '\bDOCS\b']
+      ['\bDocs\b', '\bDOCS\b',  '\bdocs\b']
 
   ':tada: INIT':
     include:
-      ['\bInit\b', '\bINIT\b']
+      ['\bInit\b', '\bINIT\b', '\init\b']
   
   ':lipstick: DESIGN':
     include:
-      ['\bDesign\b', '\bDESIGN\b']
+      ['\bDesign\b', '\bDESIGN\b', '\bdesign\b']
 
-  'CHORE':
+  ':broom: CHORE':
     include:
-      ['\bCHORE\b', '\bChore\b']
-  ':page_with_curl: DOCS':
+      ['\bCHORE\b', '\bChore\b', '\bchore\b']
+
+  ':hammer: REFACTOR':
     include:
-      ['\bDocs\b', '\bDOCS\b']
+      ['\bRefactor\b', '\bREFACTOR\b', '\brefactor\b']
+
