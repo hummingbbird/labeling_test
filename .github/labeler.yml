@@ -15,7 +15,7 @@ labels:
 
   ':tada: INIT':
     include:
-      ['\bInit\b', '\bINIT\b', '\init\b']
+      ['\bInit\b', '\bINIT\b', '\binit\b']
   
   ':lipstick: DESIGN':
     include:
